@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   <!--bean to invoke HelloWorld class-->
+   <bean id="helloWorld" class="HelloWorld">
+       <property name="message1" value="Hello World"/>
+       <property name="message2" value="Hello Second World"/>   
+   </bean>
+
+    <!--bean to invoke HelloIndia class which extends the HelloWorldClass-->
+    <!--message2 is considered from super class-->
+   <bean id="helloIndia" class="HelloIndia" parent="helloWorld">
+   		<property name="message1" value="Hello India"/>
+   		<property name="message3" value="Namste"/>
+   </bean>
+
+</beans>
