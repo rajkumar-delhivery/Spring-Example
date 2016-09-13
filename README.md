@@ -1,2 +1,2 @@
 # Spring-Example
-This Repository contains the besic Spring example. (Spring.io)
+This Repository contains the basic Spring example. (Spring.io)
