@@ -1,7 +1,7 @@
 package Hello;
 
 /**
- * Created by delhivery on 26/8/16.
+ * Created by rajkumar on 26/8/16.
  */
 public class Greetings {
     private final long id;
